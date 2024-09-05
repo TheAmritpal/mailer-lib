@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  mailer-lib:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mailer-lib
+    ports:
+      - "3002:3002"
